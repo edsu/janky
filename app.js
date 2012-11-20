@@ -11,11 +11,7 @@ app.get('/robots', function(req, res) {
   lookup(url, function(err, results) {
     if (!err) {
       res.jsonp(results);
-    } else if (String(err).match(/HTTP 404/)) {
-      // if robots.txt isn't there anything is fair game
-      res.jsonp({google: true, bing: true})
     } else {
-      // uhoh some other error occurred
       res.jsonp({error: String(err)});
     }
   });

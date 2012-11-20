@@ -1,0 +1,12 @@
+{
+    "name": "janky",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+      "async": "latest",
+      "express": "latest",
+      "redis": "latest",
+      "underscore": "latest",
+      "robots": "latest"
+    }
+}
